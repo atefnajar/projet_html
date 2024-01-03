@@ -1,0 +1,124 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    width:99%;
+
+
+}
+
+/* HEADER */
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 5%; /* Utilisation de pourcentages pour la largeur du padding pour une meilleure réactivité */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ffcc00; /* Couleur jaune pour le survol */
+}
+
+/* Ajustements pour une meilleure réactivité sur les écrans plus petits */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+#point{
+    color:orange ;
+    font-size: large;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.column{
+    float: center;
+    width: auto;
+    padding: 0px;
+}
+.column img{
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    margin-left: 90px;
+    display:flex;
+}
+.column iframe{
+    width: 250%;
+    height: 91.5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    display:flex;
+    margin-left: 10%;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row2::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column2{
+    float: left;
+    width: auto;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: auto;
+}

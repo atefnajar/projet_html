@@ -1,0 +1,170 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    width:auto;
+
+}
+
+/* HEADER */
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 5%; /* Utilisation de pourcentages pour la largeur du padding pour une meilleure réactivité */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ffcc00; /* Couleur jaune pour le survol */
+}
+
+/* Ajustements pour une meilleure réactivité sur les écrans plus petits */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+#point{
+    color:orange ;
+    font-size: large;
+}
+
+
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+.anime-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.anime-item {
+    width: 300px;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease-in-out;
+}
+
+.anime-item:hover img {
+    opacity: 0.8;
+}
+.anime-item:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* Réglages pour les écrans plus petits */
+@media screen and (max-width: 768px) {
+    .anime-item {
+        width: calc(50% - 20px); 
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.animlist {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+/*contact*/
+.contact {
+    padding: 20px 5%;
+}
+
+form {
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/*apropos*/
+.apropos {
+    padding: 20px 5%;
+    text-align: justify;
+}
